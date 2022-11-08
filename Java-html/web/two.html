@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个表格</title>
+    <link rel="stylesheet" href="./css/two.css">
+</head>
+<body>
+<div class="one">
+    <table>
+        <tr>
+            <td colspan="3" class="tim">1.&nbsp;会员登录名和密码</td>
+        </tr>
+        <tr>
+            <td class="rig">用户名：</td>
+            <td>
+                <input type="text" placeholder="请输入用户名">
+                <span>*</span>
+            </td>
+            <td class="instr">
+                <input class="jia" type="button" value="检查用户名"/>5-15位，请使用英文（a-z、A-Z）、数字（0-9）
+            </td>
+        </tr>
+        <tr>
+            <td class="rig">密码：</td>
+            <td>
+                <input type="text" placeholder="请输入密码">
+                <span>*</span>
+            </td>
+            <td class="instr">
+                5-15位，请使用英文（a-z、A-Z）、数字（0-9）注意区分大小写；</br>
+                密码不能与登录名相同；易记；难猜
+            </td>
+        </tr>
+        <tr>
+            <td class="rig">再次输入密码：</td>
+            <td>
+                <input type="text" placeholder="请输入密码">
+                <span>*</span>
+            </td>
+            <td class="instr">
+                两次输入的密码必须一致
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="tim">2.&nbsp;姓名和联系方式</td>
+        </tr>
+        <tr>
+            <td class="rig">真实姓名：</td>
+            <td>
+                <input type="text" placeholder="请输入">
+                <span>*</span>
+            </td>
+            <td>
+                <input type="radio" name="gender" checked>先生
+                <input type="radio" name="gender">小姐
+            </td>
+        </tr>
+        <tr>
+            <td class="rig">电子邮箱：</td>
+            <td>
+                <input type="text" placeholder="请输入">
+                <span>*</span>
+            </td>
+            <td class="instr">
+                <span>非常重要！</span></br>
+                这是客户与你联系的首选方式，请一定填写真实。
+            </td>
+        </tr>
+        <tr>
+            <td class="rig">公司地址：</td>
+            <td colspan="2">
+               <select name="shen" style="width: 100px;">
+                   <option>北京</option>
+                   <option>上海</option>
+                   <option>广州</option>
+                   <option>南京</option>
+               </select>
+                <select>
+                    <option>东城</option>
+                    <option>上海</option>
+                    <option>广州</option>
+                    <option>南京</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="rig">街道地址：</td>
+            <td colspan="2" class="instr">
+                <input type="text" placeholder="请输入">
+                <span>*</span>
+                填写县（区）、街道、门牌号
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="tim">3.&nbsp;公司名称和主营业务</td>
+        </tr>
+        <tr>
+            <td class="rig">贵公司名称：</td>
+            <td>
+                <input type="text" placeholder="请输入">
+                <span>*</span>
+            </td>
+            <td class="instr">
+                请填写在工商局注册的公司/商号全称；</br>
+                无商号的个体经营者填写执照上的姓名，如：张三（个体经营）
+            </td>
+        </tr>
+        <tr>
+            <td class="rig">主营行业：</td>
+            <td>
+                <select style="width: 100px;">
+                    <option>电子电工</option>
+                </select>
+            </td>
+            <td class="instr">
+                请正确选择。你会收到该行业、该产品的供求信息
+            </td>
+        </tr>
+        <tr>
+            <td class="rig">公司地址：</td>
+            <td colspan="2">
+                <input type="text" value="http://" style="width: 200px;">
+            </td>
+        </tr>
+        <tr style="height: 50px;">
+            <td></td>
+            <td colspan="2">
+                <input class="sub" type="submit" value="确认提交">
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid #D9D9D9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.tim{
+    font-weight: 600;
+}
+.rig{
+    text-align: right;
+    padding-left: 20px;
+}
+.instr{
+    color: dodgerblue;
+    font-size: 10px;
+}
+.jia{
+    width: 70px;
+    height: 20px;
+    font-size: 10px;
+}
+span{
+    color: red;
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 20px;
+}
+.sub{
+    width: 170px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #73C92C;
+    border-radius: 5px;
+    background: #73C92C;
+}

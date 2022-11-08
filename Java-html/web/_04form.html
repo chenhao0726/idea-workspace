@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表单</title>
+</head>
+<body>
+	<!-- 
+		action: 表示将form中的数据 传输到哪去
+		method: 表示传输数据使用什么方式
+	 -->
+	<form action="" method="get">
+		<!-- 
+			填写账号密码  输入框 input 
+			type="text": 表示该框是一个 文本框
+			type="password": 表示该框是一个 文本框
+			type="radio" 表示单选框 同一组单选框需要使用name属性进行约束 name属性的值要一致 才能互斥
+			type="checkbox" 是复选框
+			type="file" 是文件上传框
+			type="hidden" 是文本隐藏域
+			type="submit"：提交按钮 把数据提交到action的地址去
+			type="button"：普通按钮
+			type="reset"：重置按钮 将页面所有值清空
+			type="image"：图片按钮
+			
+			input 这个标签 都可以写 name属性 如果想要数据传到后台 那么必需要有name属性
+			
+			value属性：标签包含的数据
+			对于不同的type类型，value属性的用法也不一致：
+			type="button"、"reset"、"submit"：value值定义按钮上的显示文本
+			type="text"、"password"、"hidden"：value值定义输入框的初始值
+			type="checkbox"、"radio"、"image"：value值定义与输入相关联的值
+		-->
+		账号:<input type="text" value="sss"> <br/>
+		
+		密码:<input type="password"><br/>
+		
+		性别:男<input type="radio" name="gender" value="1"> 
+			 女<input type="radio" name="gender" value="2" checked="checked"><br/>
+			 
+		爱好:唱<input type="checkbox" value="1"> 
+			 跳<input type="checkbox" value="2"> 
+			rap<input type="checkbox" value="3"><br/>
+			
+		上传头像:<input type="file"><br/><!-- 回显 -->
+		
+		隐藏文本域:<input type="hidden"><br/><!-- 回显 -->
+		
+		多行文本域:<br/><textarea cols="20" rows="5" name=""></textarea><br/>
+		
+		省:<select >
+			<option value="1">--请选择--</option>
+			<option>四川省</option>
+			<option>河北省</option>
+			<option>黑龙江</option>
+		</select>
+		市:<select>
+			<option>--请选择--</option>
+		</select>
+		区:<select>
+			<option>--请选择--</option>
+		</select>
+		<br/>
+		
+		<input type="submit" value="提交"> <input type="reset" value="重置"> 
+		<input type="button" value="普通按钮"> <!-- <input type="image" src="./img/1.png" value="图片"> --><br/>
+	</form>
+</body>	
+</html>

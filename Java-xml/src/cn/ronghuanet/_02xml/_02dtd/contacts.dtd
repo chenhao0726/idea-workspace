@@ -1,0 +1,5 @@
+<!ELEMENT contacts (linkman*)>
+<!ELEMENT linkman (name?,email?,tel?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email ANY>
+<!ELEMENT tel EMPTY>

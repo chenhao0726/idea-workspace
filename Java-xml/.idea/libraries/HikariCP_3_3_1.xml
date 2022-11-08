@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="HikariCP-3.3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/HikariCP-3.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.47.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.30.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE contacts SYSTEM "contacts.dtd">
+<contacts> <!-- The content of element type "contacts" must match "(linkman)+". -->
+	<linkman>
+		<name>sss</name>
+		<email>dsfsdf</email>
+		<tel/>
+	</linkman>
+	<linkman></linkman>
+	<linkman></linkman>
+</contacts>

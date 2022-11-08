@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试页面</title>
+    <link rel="stylesheet" href="./css/one.css">
+</head>
+<body>
+<div class="head">
+    <!--1.	colspan：合并列/在列上面合并
+        ⦁	取值规则：合并n列，取值为n，同时删除当前tr下的n-1个单元格；
+        1.	rowspan：合并行/在行上面合并
+        ⦁	取值规则：合并n行，取值为n，同时依次删除与当前行同级的n-1个tr下的一个单元格；-->
+    <table class="tb">
+        <tr style="height: 40px;">
+            <td colspan="2" class="sel">查询条件：
+                <select name="gonhao">
+                    <option value="工号">工号</option>
+                    <option value="姓名">姓名</option>
+                    <option value="性别">性别</option>
+                    <option value="手机号">手机号</option>
+                    <option value="职位">职位</option>
+                    <option value="职称">职称</option>
+                </select>
+            </td>
+            <td colspan="7" class="sel">关键字：
+                <input type="text" placeholder="请输入你要搜索的内容"/>
+                <input type="button" value="搜索"/>
+            </td>
+        </tr>
+        <tr style="height: 30px;">
+            <td colspan="9"></td>
+        </tr>
+        <tr>
+            <th width="50"></th>
+            <th width="150">工号</th>
+            <th width="125">姓名</th>
+            <th width="70">性别</th>
+            <th width="150">手机</th>
+            <th width="100">职位</th>
+            <th width="150">职称</th>
+            <th width="50">离职</th>
+            <th width="50">有效</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>100001</td>
+            <td>小明</td>
+            <td>男</td>
+            <td>13768438276</td>
+            <td>工程师</td>
+            <td>工程技术</td>
+            <td>
+                <input type="checkbox" checked>
+            </td>
+            <td>
+                <input type="checkbox" checked>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>100002</td>
+            <td>小虎</td>
+            <td>男</td>
+            <td>13768438276</td>
+            <td>工程师</td>
+            <td>工程技术</td>
+            <td>
+                <input type="checkbox" checked>
+            </td>
+            <td>
+                <input type="checkbox" checked>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>100003</td>
+            <td>小明</td>
+            <td>男</td>
+            <td>13768438276</td>
+            <td>工程师</td>
+            <td></td>
+            <td>
+                <input type="checkbox" checked>
+            </td>
+            <td>
+                <input type="checkbox" checked>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>100004</td>
+            <td>小花</td>
+            <td>男</td>
+            <td>13768438276</td>
+            <td>工程师</td>
+            <td></td>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>
+                <input type="checkbox" checked>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>100005</td>
+            <td>小明</td>
+            <td>女</td>
+            <td>13768438276</td>
+            <td>工程师</td>
+            <td></td>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>
+                <input type="checkbox" checked>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="9" class="page">
+                <input class="in_one" type="button" value="<"/>
+                <input type="button" value=">"/>
+                &nbsp;第&nbsp;
+                <input type="text" value="1" name="1" style="width: 50px;text-align: center"/>
+                &nbsp;页&nbsp;/&nbsp;共&nbsp;15&nbsp;页&nbsp;&nbsp;每页记录：&nbsp;
+                <select name="yie">
+                    <option value="1">50</option>
+                    <option value="2">40</option>
+                    <option value="3">30</option>
+                    <option value="4">20</option>
+                </select>
+                &nbsp;&nbsp;检索到&nbsp;675&nbsp;条记录，显示&nbsp;第&nbsp;1条&nbsp;-&nbsp;第&nbsp;50&nbsp;条
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
